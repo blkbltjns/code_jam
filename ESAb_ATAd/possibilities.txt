@@ -1,0 +1,59 @@
+101001101 normal
+010110010 clipped
+101100101 reverse
+010011010 reverse + clipped
+
+
+
+
+0101110010 n
+1010001101 c
+0100111010 r
+1011000101 r + c
+
+r + c = xor(n,c,r)
+
+
+1111111111 n
+0000000000 c
+1111111111 r
+0000000000 r + c
+
+1111111110 n
+0000000001 c
+0111111111 r
+1000000000 r + c
+
+1111100000 n
+0000011111 c
+0000011111 r
+1111100000 r + c
+
+1111000000 n
+0000111111 c
+0000001111 r
+1111110000 r + c
+
+1111101111
+
+same flip = c or r + c
+diff flip = c or r
+
+true = c or r + c
+true = c or r
+= c
+
+true = c or r + c
+false = n or r + c
+= r + c
+
+false = n or r
+true =  c or r
+= r
+
+false = n or r
+false = n or r + c
+= n
+
+
+
